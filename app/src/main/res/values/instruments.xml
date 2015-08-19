@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="instruments">
+        <!--
+           This string-array is the heart of the app's resources.
+           Feel free to edit it as you like, but be warned that the app
+           might not work correctly if you do, so let me explain the syntax:
+           There are four colon-delimited fields per instrument, notated as such:
+
+           instrument name : MIDI pitches of notes : transposition in semitones : amplitude of harmonics
+
+           MIDI pitches are used to represent notes on the chromatic scale with positive integers.  Other
+           programs use MIDI pitch as well, so you can find lots of online documentation for converting
+           between chromatic note names and MIDI pitches, but for now, just know that A5 (a440) is 69.
+
+           Transposition values represent the difference between an instrument's pitch and concert pitch.
+           For example, the trumpet's C is 2 semitones flat of concert C, so it has a transposition
+           value of -2.
+
+           The amplitudes of the harmonics are used to approximate a waveform similar to the instrument
+           being tuned, without refering to any sound files for reference.  Each instrument is given 64
+           harmonics, which represent the amplitudes of whole number multiples of the fundamental pitch.
+
+           The amplitudes of the harmonics are written in hexadecimal notation, with one character
+           per value, representing a value anywhere between 0 and 15.  Any of the 64 harmonics beyond the
+           length of the field are assumed to be of zero amplitude.
+            -->
+
+        <item>Guitar:40,45,50,55,59,64:0:ffdb859853573050</item>
+        <item>Guitar(Drop D):38,45,50,55,59,64:0:ffdb859853573050</item>
+        <item>Guitar(E flat):39,44,49,54,58,63:0:ffdb859853573050</item>
+        <item>Mandolin:55,62,69,76:0:fff0db97531</item>
+        <item>Violin:55,62,69,76:0:fff0db97531</item>
+        <item>Viola:50,57,64,71:0:fff0db97531</item>
+        <item>Cello:36,43,50,57:0:f4fdb000456789ab</item>
+        <item>Trumpet:58,65,70:-2:ffffca74</item>
+        <item>Bass Guitar:23,28,33,38,43:0:fffda321543733232</item>
+        <item>Double Bass:28,33,38,43:0:f530289876d4321</item>
+        <item>Flute:60,72:0:f2d</item>
+        <item>Clarinet:53,55,57,58:-2:f0f0a0804</item>
+        <item>Timpani:36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64:0:f6b4321</item>
+    </string-array>
+</resources>

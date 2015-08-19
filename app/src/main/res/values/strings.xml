@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">UniTune</string>
+    <string name="title_activity_main">UniTune</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="modes">
+        <item>Tuning pitches</item>
+        <item>All chromatic pitches</item>
+    </string-array>
+</resources>
